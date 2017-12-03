@@ -29,28 +29,24 @@ public class InNOutTest
     SortedLinkedDictionary report = new SortedLinkedDictionary();
 
     int day = 1; // Starting day: December 1, 2017.
-    int shipmentArrival = 1; // Track days left until new shipment arrives.
+    int shipmentArrival = 0; // Track days left until new shipment arrives.
 
-
-    while(day < 32) // Go through each day until end of December.
+    while(day < 32) // Go through each day until end of December ( December 31, 2017).
     {
       System.out.println("December " + day +":");
 
       // Checks if shipment arrived at start of each day.
-      shipmentArrival--;
-      if(shipmentArrival == 0)
+      if(shipmentArrival == 0) // Shipment arrives
       {
         System.out.println("Shipment has arrived.");
+        kitchen.restock();
+        shipmentArrival = random.nextInt(4) + 2; // Set days left for next for arrival. Between 3 - 6 days.
       }
-      else
+      else // Shipment did not arrive.
       {
         System.out.println("No shipment today.");
-      }
-      if(shipmentArrival == 0)
-      {
-        kitchen.restock();
-        shipmentArrival = random.nextInt(4) + 3; // Set next date for arrival. Between 3 - 6.
-      } // end if - shipment complete.
+        shipmentArrival--;
+      } // No shipment
 
       // Begin serving customers for the day.
 

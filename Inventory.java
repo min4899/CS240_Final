@@ -39,6 +39,7 @@ public class Inventory
     // Receive random amount of total shipment between 700 - 1000.
     int shipmentAmount = random.nextInt(301) + 700;
 
+    // Counter for new ingredients.
     int newBun = 0;
     int newPatty = 0;
     int newLettuce = 0;
@@ -81,11 +82,11 @@ public class Inventory
     }
     for(int i = 0; i < newBun; i++)
     {
-      bun.push(5); // Push new ingredients on the bottom of stack.
+      bun.push(5); // Push new ingredients to the bottom of stack.
     }
     while(!temp.isEmpty())
     {
-      bun.push(temp.pop()); // Push old ingredients on top of new ones.
+      bun.push(temp.pop()); // Push old ingredients to top of new ones.
     }
 
     // Reordering patty stack.
@@ -95,11 +96,11 @@ public class Inventory
     }
     for(int i = 0; i < newPatty; i++)
     {
-      patty.push(4); // Push new ingredients on the bottom of stack.
+      patty.push(4); // Push new ingredients to the bottom of stack.
     }
     while(!temp.isEmpty())
     {
-      patty.push(temp.pop()); // Push old ingredients on top of new ones.
+      patty.push(temp.pop()); // Push old ingredients to top of new ones.
     }
 
     // Reordering lettuce stack.
@@ -109,11 +110,11 @@ public class Inventory
     }
     for(int i = 0; i < newLettuce; i++)
     {
-      lettuce.push(3); // Push new ingredients on the bottom of stack.
+      lettuce.push(3); // Push new ingredients to the bottom of stack.
     }
     while(!temp.isEmpty())
     {
-      lettuce.push(temp.pop()); // Push old ingredients on top of new ones.
+      lettuce.push(temp.pop()); // Push old ingredients to top of new ones.
     }
 
     // Reordering tomato stack.
@@ -123,11 +124,11 @@ public class Inventory
     }
     for(int i = 0; i < newTomato; i++)
     {
-      tomato.push(3); // Push new ingredients on the bottom of stack.
+      tomato.push(3); // Push new ingredients to the bottom of stack.
     }
     while(!temp.isEmpty())
     {
-      tomato.push(temp.pop()); // Push old ingredients on top of new ones.
+      tomato.push(temp.pop()); // Push old ingredients to top of new ones.
     }
 
     // Reordering onion stack.
@@ -137,11 +138,11 @@ public class Inventory
     }
     for(int i = 0; i < newOnion; i++)
     {
-      onion.push(5); // Push new ingredients on the bottom of stack.
+      onion.push(5); // Push new ingredients to the bottom of stack.
     }
     while(!temp.isEmpty())
     {
-      onion.push(temp.pop()); // Push old ingredients on top of new ones.
+      onion.push(temp.pop()); // Push old ingredients to top of new ones.
     }
 
     // Reordering cheese stack.
@@ -151,11 +152,11 @@ public class Inventory
     }
     for(int i = 0; i < newCheese; i++)
     {
-      cheese.push(2); // Push new ingredients on the bottom of stack.
+      cheese.push(2); // Push new ingredients to the bottom of stack.
     }
     while(!temp.isEmpty())
     {
-      cheese.push(temp.pop()); // Push old ingredients on top of new ones.
+      cheese.push(temp.pop()); // Push old ingredients to top of new ones.
     }
   } // end restock
 
