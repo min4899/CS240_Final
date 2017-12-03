@@ -77,85 +77,85 @@ public class Inventory
     // Reordering bun stack.
     while(!bun.isEmpty())
     {
-      temp.push(bun.pop());
+      temp.push(bun.pop()); // Store old ingredients in temporary stack.
     }
     for(int i = 0; i < newBun; i++)
     {
-      bun.push(5);
+      bun.push(5); // Push new ingredients on the bottom of stack.
     }
     while(!temp.isEmpty())
     {
-      bun.push(temp.pop());
+      bun.push(temp.pop()); // Push old ingredients on top of new ones.
     }
 
     // Reordering patty stack.
     while(!patty.isEmpty())
     {
-      temp.push(patty.pop());
+      temp.push(patty.pop()); // Store old ingredients in temporary stack.
     }
     for(int i = 0; i < newPatty; i++)
     {
-      patty.push(4);
+      patty.push(4); // Push new ingredients on the bottom of stack.
     }
     while(!temp.isEmpty())
     {
-      patty.push(temp.pop());
+      patty.push(temp.pop()); // Push old ingredients on top of new ones.
     }
 
     // Reordering lettuce stack.
     while(!lettuce.isEmpty())
     {
-      temp.push(lettuce.pop());
+      temp.push(lettuce.pop()); // Store old ingredients in temporary stack.
     }
     for(int i = 0; i < newLettuce; i++)
     {
-      lettuce.push(3);
+      lettuce.push(3); // Push new ingredients on the bottom of stack.
     }
     while(!temp.isEmpty())
     {
-      lettuce.push(temp.pop());
+      lettuce.push(temp.pop()); // Push old ingredients on top of new ones.
     }
 
     // Reordering tomato stack.
     while(!tomato.isEmpty())
     {
-      temp.push(tomato.pop());
+      temp.push(tomato.pop()); // Store old ingredients in temporary stack.
     }
     for(int i = 0; i < newTomato; i++)
     {
-      tomato.push(3);
+      tomato.push(3); // Push new ingredients on the bottom of stack.
     }
     while(!temp.isEmpty())
     {
-      tomato.push(temp.pop());
+      tomato.push(temp.pop()); // Push old ingredients on top of new ones.
     }
 
     // Reordering onion stack.
     while(!onion.isEmpty())
     {
-      temp.push(onion.pop());
+      temp.push(onion.pop()); // Store old ingredients in temporary stack.
     }
     for(int i = 0; i < newOnion; i++)
     {
-      onion.push(5);
+      onion.push(5); // Push new ingredients on the bottom of stack.
     }
     while(!temp.isEmpty())
     {
-      onion.push(temp.pop());
+      onion.push(temp.pop()); // Push old ingredients on top of new ones.
     }
 
     // Reordering cheese stack.
     while(!cheese.isEmpty())
     {
-      temp.push(cheese.pop());
+      temp.push(cheese.pop()); // Store old ingredients in temporary stack.
     }
     for(int i = 0; i < newCheese; i++)
     {
-      cheese.push(2);
+      cheese.push(2); // Push new ingredients on the bottom of stack.
     }
     while(!temp.isEmpty())
     {
-      cheese.push(temp.pop());
+      cheese.push(temp.pop()); // Push old ingredients on top of new ones.
     }
   } // end restock
 
